@@ -1,6 +1,15 @@
 server:
   port: 9296
 
+#spring:
+#  application:
+#    name: CONFIG-SERVER
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://github.com/ekjot1313/user-department-config-repo.git
+#          clone-on-start: true
 spring:
   application:
     name: CONFIG-SERVER
@@ -8,9 +17,11 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/ekjot1313/user-department-config-repo
+          #          uri: C:\\Users\\I538130\\user-dept-config-repo
+#          uri: https://github.com/apoorvsemwal/user-dept-config-repo
           clone-on-start: true
-
+          default-label: main
+          uri: https://github.com/ekjot1313/user-department-config-repo
 
 eureka:
   client:
